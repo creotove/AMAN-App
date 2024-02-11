@@ -6,7 +6,9 @@ import { utils } from '../styles/utils';
 import SimpleHeader from '../components/SimpleHeader';
 import { PlusIcon } from 'react-native-heroicons/outline'
 
+
 const AddSoldBillScreen = ({navigation}) => {
+
   return (
     <View style={universal.main}>
         {/* Back Button And header  */}

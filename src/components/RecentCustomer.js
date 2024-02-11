@@ -5,14 +5,14 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 import {ChevronRightIcon} from "react-native-heroicons/outline"
 import { utils } from '../styles/utils'
 
-const RecentCustomer = () => {
+const RecentCustomer = ({ name, phoneNumber, avatar }) => {
   return (
-    <View style={recentCustomer.container}>
+    <View style={recentCustomer.container} >
       <View style={recentCustomer.userDetail}>
-        <Image style={recentCustomer.userDetailImage} source={require('../assets/placeholder.png')} />
+        <Image style={recentCustomer.userDetailImage} source={{uri: avatar}} />
         <View style={recentCustomer.userDetailContent}>
-            <Text style={utils.mediumText}>Altamas</Text>
-            <Text style={utils.smallGrayText}>926570XXXX</Text>
+            <Text style={utils.mediumText}>{name}</Text>
+            <Text style={utils.smallGrayText}>{phoneNumber}</Text>
         </View>
       </View>
       <View>

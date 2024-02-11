@@ -22,7 +22,7 @@ const HomeScreen = ({ navigation }) => {
 
       {/* Search Bar  */}
         <View style={universal.searchContainer}>
-          <TextInput style={universal.searchBar} placeholder='Enter mobile number' placeholderTextColor={'gray'}></TextInput>
+          <TextInput autoComplete='off' style={universal.searchBar} placeholder='Enter mobile number' placeholderTextColor={'gray'}></TextInput>
           <TouchableOpacity style={universal.searchBtn}>
               <MagnifyingGlassIcon color={'black'} height={hp(4)} width={hp(4)} />
           </TouchableOpacity>
